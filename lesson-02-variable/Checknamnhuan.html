@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm </title>
+</head>
+<body>
+<Script>
+    let thongbaosai =  function() {
+        alert(year + "không là năm nhuận")
+    }
+    let thongbaodung = function() {
+        alert(year + "là năm nhuận")
+    }
+    let year = prompt("Nhập năm: ")
+    let task = checkYear(year) ? thongbaodung:thongbaosai
+    task()
+
+    function checkYear(year) {
+        return (year % 400 == 0) || ((year % 4 == 0) && (year % 100 !=0)) ? true:false
+    }
+
+</Script>
+
+</body>
+</html>
