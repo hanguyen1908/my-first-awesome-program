@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Siri</title>
+</head>
+<body>
+<script>
+    const DAY = 365
+    const HOUR = 24
+    const MINUTE = 60
+    let name = askForName()
+    let age = askForAge(name)
+    alert("Wow! It means you are"+name+calcAge(age)+"minutes old")
+        function askForName() {
+        return prompt("Who are you?")
+        }
+    function askForAge(name) {
+        return prompt("Hello" + name + "I'm Siri and I'm 20 years old. How old are you?")
+    }
+    function calcAge(age) {
+        return age*DAY*HOUR*
+    }
+
+</script>
+
+</body>
+</html>
