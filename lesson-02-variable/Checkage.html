@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<Script>
+   let age = "15"
+    let chaomung = function() {
+       document.write("tuổi hợp lệ")
+    }
+    let thongbaoloi = function() {
+       document.write("tuổi không hợp lệ")
+    }
+    let task = validateAge(age) ? chaomung : thongbaoloi
+    task()
+
+    function validateAge(age) {
+       return age * 1 == age && age > 0 ?true:false
+    }
+</Script>
+</body>
+</html>
